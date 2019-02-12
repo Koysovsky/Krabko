@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 var CryptoJS = require("crypto-js");
  
-var ciphertext = CryptoJS.AES.encrypt(process.env.TOKEN, 'xd');
+var ciphertext = CryptoJS.AES.encrypt('NTQ0NTc0Mzc0NDEwNDUyOTkz.D0NF7Q.PTqjma2lfLh7bLca0d7WeTLVaWE', 'xd');
  
 var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'xd');
 var plaintext = bytes.toString(CryptoJS.enc.Utf8);
